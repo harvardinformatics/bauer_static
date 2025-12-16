@@ -1,0 +1,1387 @@
+/* ############# reset styles ################# */
+html, body, h1, h2, h3, h5, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote, a {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: normal;
+
+}
+
+/* First colors */
+
+/* Dark color for main title */
+/* Slightly lighter version of safe for sidebar headers
+/* Mid to light background color for banner */
+/* Mid to light color for sidebar font */
+/* Dark color for menu bar toplevel menus */
+/* Darker color of above for submenus */
+
+.logo-color {
+    background-color: black;
+    border-bottom:    1px solid gray;
+}
+
+.banner-title-1 {
+    font-family:   Baskerville, Verdana, Geneva, Arial, Helvetica, sans-serif;	
+    font-size:     24px;
+    padding-top:   20px;
+    color:         #964B36;
+}
+.banner-title-2 {
+    font-family:   Baskerville,Verdana, Geneva, Arial, Helvetica, sans-serif;	
+    font-size:     16px;
+    color:         #764B36;           /* Blue gray */
+}
+
+#topbuttonbar {
+    border:        none;
+}
+
+#topbuttonbar li {
+    border-left:  1px solid #BBCCDD;
+}
+
+#topbuttonbar a, #topbuttonbar span {
+    color:        #5581b8;           /* Mid blue */
+}
+
+#topbuttonbar a:hover {
+    color:        #964b36;            /* Mid brown */
+}
+
+
+.mainpanel-title-font {
+/*    color:        #964b36;            /* Mid brown */
+    color:        #558aB8;
+}
+
+
+.sidebar_accordion .head a {
+    color:         white;
+    /*background:    #96ACDB;          /* Mid  blue */
+    background:    #215386;
+}
+
+.sidebar_accordion .head a:hover {    
+/*    color:         #000;             /* Black */
+    color:          #FFE5AB;
+}
+
+.sidebar_accordion a {
+    color:         #666;
+}
+
+.sidebar-font {
+/*    color:         #37699C;           /* Dark blue */
+    color:         #666;
+}
+
+.sidebar-border {
+    border:        1px solid #bbb;
+}
+
+.stable-color th {
+    color:          black;
+    background:     #BCC8E0;          /* LightBlue, same as Database Summary <th> */
+    /* background:     #5581B8; */
+    border:         1px solid #BCC8E0; /* no white lines in header rows */
+}
+
+.stable tr:hover {
+    background:     #EEE;             /* Very light gray */
+}
+
+.stable td {
+    border-right:    1px solid #eee;
+    border-bottom:   1px solid #eee;
+}
+#file_import_menu li {
+    /*background:      #BCC8E0;*/
+    background:      #8EAFD0;
+    border:          1px solid gray;
+}		  
+#file_import_menu li:hover {
+    background:      #FEE5D6;         /* Light pink */
+}
+/*
+.dropmenu .toplevel	{					
+    background:  #4E81B6; 
+    background-image:  url('../../plugins/HarvardBSLims/img/HarvardBSLims-menubar-gradient-blue.png');
+
+}
+
+.dropmenu .toplevel.hover { 			
+    background-color: gray; 
+    background-image:  url('../../plugins/HarvardBSLims/img/HarvardBSLims-menubar-gradient-blue.png');
+}
+
+.dropmenu .toplevel.selected { 			
+    background-color: #2A557F;
+}
+.dropmenu .toplevel.selected { 			
+    background-color: #2A557F;
+}
+
+.dropmenu .toplevel.hover.selected { 	
+    background-color: #2A557F;        /*  Dark blue
+}
+
+.dropmenu .sublevel {					
+    background-color: #2A557F;         /* Darker blue 
+    border-bottom:    1px solid #CCC; 
+}
+
+.dropmenu .sublevel.hover {				
+    background-color: gray; 
+}
+
+.dropmenu .sublevel.selected { 	
+    background-color: #204160;         /* Very Dark blue 
+ }
+
+.dropmenu .sublevel.hover.selected {	
+    background-color: #2A557F;         /* Mid Dark blue 
+}
+
+*/
+
+.div-border {
+    border:        1px solid #CCC;
+}
+
+a {
+/*    color:           #2A557F;         /* Dark green */
+    color:           #666;
+    text-decoration: none;
+}
+
+a:visited {
+/*    color:           #666677;*/
+}
+
+a:hover {
+    color:           #0066cc;         /* Bright blue */
+}
+
+/* Makes the dropdowns look better in linux firefox */
+select {
+    background: white;
+}
+
+input[type="button"], .button-color {
+    background:    #2A557F ;           /* Dark blue  */
+    color:         white;
+}
+
+input[type="button"]:hover, .button-color:hover {
+    background:    #999; 
+    color:         white;
+}
+
+input[type="submit"]:hover {
+    background:    #999;
+    color:         white;
+}
+input[type="submit"] {
+    margin:        3px;
+
+}
+input[type="file"] {
+
+}
+
+.property, .value, .valuecode, .dateinput, .roleinput, .small_value, .v_small_value, .text_area_property {  /* Don't phutz with the default dropdown styling */
+    background:        #F2F2F2;
+    border:            solid 1px #BBB; 
+}
+.mainpanel h2 h3 {
+    color:            #666;
+ }
+
+/* ############# Global Styles ################ */
+html,body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:     12px;
+	background: #FFFFFF;
+}
+
+/* The textfields in the forms */
+.property, .value, .dateinput, .small_value, .v_small_value, .text_area_property , .selectBox, .selectBox-dropdown, .selectBox-label  {
+    padding:           3px;
+    height:            1.2em;
+    width:             302px;
+    outline:           none;
+}
+.valuecode {
+    padding:           3px;
+    height:            1.2em;
+    outline:           none;
+}
+
+.selectBox, .selectBox-dropdown, .selectBox-label  {                /* Doesn't like the height */
+    padding:           0 3px;                                       /* Need the padding on the left and right */
+    height:            1.9em;                                       /* Changing this height moves the text off center !! */
+}
+.selectBox-options a {                                             /* options in the menu */
+    height:           1.5em;                                       /* Spacing of menu options */
+    padding:          2px;
+}
+	
+.text_area_property {
+    height:            5em;
+}
+.large_text_area_property {
+    width: 80%;
+    height:  10em;
+}
+.free_text_area_property {
+    height: 20em;
+}
+/* Small cells in multi form */
+.small_value , .v_small_value {
+    width:            99%;
+    padding:          0;
+    margin:           0;
+}
+.small_value.property {
+    width:   93%;
+    padding:          0;
+    margin:           0;
+}
+
+.small_dropdown {
+    width:            100px;
+}
+
+#queryselect {
+    width:            300px;
+}
+
+/* Makes sure the main panel stays to the right of the sidebar */
+#main_panel_frame {
+	margin-left: 210px;
+	margin-bottom: 10px;
+    font-weight:      normal;
+}
+/* Font for the main panel title */
+.mainpanel-title-font {
+    font-size:        2.5em;
+}
+
+.mainpanel-title {
+    padding:          0px 0px;
+/*    letter-spacing:   .05em;*/
+    width:            960px;
+    overflow:         auto;
+    margin-bottom:    30px;
+    margin-top:       20px;
+}
+#main_panel_description {
+    width:            500px;
+    text-align:       left;
+    padding:          10px;
+}
+/* Font for the secondary title in the main panel */
+#main_panel h2 {
+    font-size:   1.7em;
+    padding: 10px 0 10px 0;
+    width:   80%;
+}
+
+/* Font for the tertiary title in the main panel */
+#main_panel h3 {
+    font-size:        1.5em;
+	padding: 10px 0 10px 0;
+	margin-top: 20px;
+}
+
+
+/* For footers and horizontal bars etc */
+.end_float {
+    clear:        both;
+}
+
+/* Query Tables */
+
+.stable {
+    border-collapse: collapse;
+    margin:          0 0 5px 0;
+    padding: 0;
+}
+
+.stable th {
+	text-align: left;
+	padding: 3px 5px 3px 5px;
+	font-size: 1.1em;
+	font-weight: normal;
+		background: #BCC8E0; /* bio */
+}
+
+.stable td {
+	padding: 5px 5px 5px 5px;
+	white-space: nowrap;
+	vertical-align: text-top;
+}
+
+/* This is for wrapping long lines of text - e.g. comments, description */
+
+#textcell {
+	min-width: 300px;
+	max-width: 600px;
+	white-space: normal;
+}
+
+.sheet_input_cell {
+	padding: 0;
+	margin: 0;
+	/*    overflow: visible;*/
+}
+
+/* The instructions above many core forms */
+.description_text {
+    margin-left: 2px;
+    width:   475px;
+    font-size: 1em;
+}
+
+/*****************  Calendar style *********************/
+.calendar {
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.calendar td {
+	width: 100px;
+	height: 70px;
+	border: 1px solid #666666;
+	vertical-align: top;
+}
+
+.calendar th {
+	text-align: center;
+	border: 1px solid #666666;
+}
+
+.calendar_today {
+	background-color: #ddddff;
+	color: #000000;
+}
+
+.calendar_gray {
+	background-color: #aaaaaa;
+	color: #000000;
+}
+
+.calendar tr:hover {
+	color: #2A3D54;
+}
+
+.calendar td:hover {
+	color: #2A3D54;
+}
+
+.calendar a:hover {
+	text-decoration: none;
+}
+
+/*************** Guide style ******************b*******/
+.guide {
+	margin: 30px;
+	font: 14px Arial, Helvetica, sans-serif;
+}
+
+.guide ol {
+	margin: 10px 10px 10px 50px;
+}
+
+/*************** SpreadSheet ************************/
+#sortable_sheet td,th {
+	padding: 2px 5px 2px 5px;
+	margin: 0;
+	height: 15px;
+}
+
+#sortable_sheet tr:hover {
+	background: #FFFFFF;
+}
+
+/*************** Flowcell Lane Display *************/
+
+.lane_row {
+	padding: 0;
+	margin: 10px;
+	border-collapse: collapse;
+     /*border:           1px solid lightgray;*/
+}
+
+.lane_row td {
+	min-width: 60px;
+     /*border-left:      1px solid lightgray;*/
+	padding: 0px 5px 0px 5px;
+}
+
+.config_table {
+	width: 80%;
+	border-collapse: collapse;
+}
+
+.config_table input {
+	padding: 2px 5px 2px 5px;
+	min-width: 200px;
+}
+
+#config_header {
+	font-size: 1.5em;
+}
+
+#file_import_menu {
+	padding: 0;
+	width: 150px;
+	list-style: none;
+}
+
+#file_import_menu li {
+	width: 200px;
+}
+
+.ui-menu .ui-menu-item a {   /* The autocomplete dropdown menu */
+    padding: 1px;
+	margin: 0px;
+}
+
+.ui-autocomplete a.ui-menu-item-alternate {
+	background-color: Gray;
+}
+/*
+.ui-autocomplete a.ui-state-hover {
+	font-weight: normal !important;
+}
+
+.ui-autocomplete-input {
+	width: 300px;
+	padding: 2px;
+}
+
+.ui-menu .ui-menu {
+	margin-top: -3px;
+}
+
+.ui-menu .ui-menu-item {
+	margin: 0;
+	padding: 0;
+	zoom: 1;
+	float: left;
+	clear: left;
+	width: 100%;
+	font-size: 1em;
+}
+
+.ui-menu .ui-menu-item a {
+	text-decoration: none;
+	display: block;
+	list-style: none;
+	margin: 0;
+}
+*/
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	background: #8EAFD0;
+    border-radius:       4px;
+}
+
+#tableform td {
+    padding:      2px;        /* This is the padding between the input and the table cell* i.e. how far apart the textfields are vertically*/
+}
+
+/* For multi instance input forms - ChildFormBuilder. */
+
+/* Styling for the add xxxx button on the form */
+.childtableform {
+    border:         1px solid gray;
+    margin-bottom:  20px;
+}
+.v_small_value {
+  width:  105px;
+}
+._proprank {
+  width: 15px;
+}
+.childtableform th, .childtableform td {
+  min-width:        200px;
+  max-width:        200px;
+  text-align:       center;
+}
+.childtableform  th {
+  font-size:        1em;
+  font-weight:      normal;
+  background:       lightgray;
+}
+.childtableform .small_cell {
+  min-width:        20px;
+  max-width:        20px;
+}
+.childtableform input {
+  height:           2em;
+}
+.childtableform select {
+  height:           2em;  /* This is so the selects show property on firefox on linux */
+  paddbing:          0;
+  margin:           0; 
+  width:            99%;
+  background:       white;
+}
+
+/*  #########################  Top Button Bar ##########################*/
+#logo {
+	background: #000;
+	height: 100px;
+}
+
+#logo img {
+    float:           left;
+}	 
+
+#topbuttonbar {
+	float: right; /* Buttons on right hand side */
+	background: #000;
+	padding: 3px;
+	height: 50px;
+	line-height: 50px; /* buttons are in the middle vertically */
+	vertical-align: middle;
+}
+
+#topbuttonbar li {
+	display: inline;
+	list-style: none;
+	padding: 2px 5px 2px 5px;
+	border-left: 1px solid #BBCCDD;
+}
+
+#topbuttonbar button {
+	padding: 0;
+	text-decoration: none !important;
+	margin: 0px 5px 6px 5px;
+	border: none;
+}
+
+#topbuttonbar .ui-button-text {
+	padding: 2px 3px 2px 3px;
+	font-size: 1.0em;
+}
+
+#topbuttonbar input {
+	width: 100px;
+}
+
+#topbuttonbar a {
+	color: #5581b8;
+}
+
+#topbuttonbar a:hover {
+	color: #FFFFFF;
+}
+
+/*  #########################  Menu Bar ##########################*/
+.dropmenu ul {
+	width: 170px;
+	background: #333;
+}
+
+.dropmenu li span {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.dropmenu .toplevel ul {
+	padding: 15px 10px 15px 10px;
+	background: #eee;
+}
+
+/*  #########################  First Tab Bar ##########################*/
+#header {
+	position: relative;
+	height: 28px;
+	color: #385473;
+	color: black;
+	margin-right: 0px;
+	margin-top: 8px;
+	margin-left: 8px;
+	padding: 0;
+	border: none;
+	visibility: hidden;
+}
+
+#header a {
+	padding: 0.5em 1em; /* Spacing between text and outside of tab */
+	font-size: 1.0em; /* Size of text in tab */
+	padding: 5px 10px 5px 10px; /* padding in dropdown menus */
+}
+
+.ui-state-default { /*font-size:  0.9em;*/
+	
+}
+
+/*  #########################  Sidebar Accordions ##########################*/
+#sidebar {
+	padding: 3px;
+	width: 185px;
+	float: left;
+	border: none;
+	position: relative;
+	top: -40px;
+}
+
+.sidebar_accordion {
+    border-radius:  4px;
+    margin: 5px;
+    border: 1px solid #bbb;
+}
+
+.sidebar_accordion .head a {
+    color: white;
+	background: #215386;
+	display: block;
+	height: 100%;
+	width: 163px;
+	padding: 5px;
+	text-indent: 10px;
+	font-size: 1.2em;
+}
+
+.sidebar_accordion .head a:hover {
+	color: #FFE5AB;
+}
+
+.sidebar_accordion ul {
+	margin: 0;
+}
+
+.sidebar_accordion li {
+	list-style: none;
+	display: block;	
+	padding:      3px 5px 3px 15px;
+	margin: 0;
+	font-size:  1em;
+}
+
+.sidebar_accordion a {
+	display: block;
+}
+
+.sidebar_accordion li:hover {
+	background: #999;
+}
+
+.sidebar_accordion a:hover {
+	color: #333;
+}
+
+/* ########################## Query Editor tabs ###############################*/
+.ui-tabs-nav {
+	height: 20px;
+}
+
+.ui-widget-content {
+	border: none;
+}
+
+.ui-dialog {
+	border-top: 1px solid #bbb;
+	border-right: 2px solid #bbb;
+	border-bottom: 2px solid #bbb;
+	border-left: 1px solid #bbb;
+}
+
+.query-editor-tabs {
+	
+}
+
+/*  #########################  Add button in forms ############################*/
+.add_button {
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+/*  #########################  Breadcrumbs ####################################*/
+#breadcrumbs {
+	float: right;
+	margin: 0.8em;
+	margin-right: 40px;
+	font-size: 10px;
+}
+
+/*  #########################  Add/clone/delete/edit buttons ##################*/
+.pagebuttons {
+    margin-right:  80px;
+}
+.add_child_row {
+    padding:       5px;
+}
+.pagebuttons li {
+    float: right;
+    list-style: none;
+    display: inline;
+    font-size:  0.5em;
+    padding:       2px;
+/*    margin-top:    -20px; This inteferes with the title*/
+}
+
+/*  #########################  Query results table
+##########################*/
+.table_query_list ul {
+	margin: 0;
+}
+
+.table_query_list li {
+	list-style: none;
+	display: block;	
+	padding:      3px 5px 3px 15px;
+	margin: 0;
+	font-size:  1em;
+}
+.table_query_pagination ul {
+        margin: 0;
+}
+
+.table_query_pagination li {
+        list-style: none;
+        display: block;
+        padding:      3px 5px 3px 15px;
+        margin: 0;
+        font-size:  1em;
+}
+
+/*
+.query_results li {
+	list-style: none;
+	width: auto;
+}*/
+/* These two are for IE 7 - the table control panel has a huge space */
+/* above it otherwise */
+/*.query_results_control li {
+    list-style: none;
+}
+.filter_table {
+    height:  30px;
+}
+.filter_table_item {
+    height:  60px;
+}
+*/
+/* ########################## Cursor changing ############################*/
+html.busy,html.busy * {
+	cursor: wait !important;
+}
+
+/* ########################### tooltip ################################## */
+.tooltip {
+	background-color: #ddd;
+	padding:          5px 7px;
+	width:            150px;
+	display: none;
+	color:            #000;
+	text-align: left;
+	font-size:        10px;
+
+	/* outline radius for mozilla/firefox only */
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+}
+
+#nodecoration {
+	margin: auto;
+	padding: 20px;
+}
+
+.trigger a,.form-help {
+	
+}
+
+#tableform td { /*    border:  1px solid red;*/
+	
+}
+
+input[type="button"]:hover {
+	background: #999;
+	color: white;
+}
+
+input[type="submit"]:hover {
+	background: #999;
+	color: white;
+}
+
+#toolbar-wrapper {
+	width: 1100px;
+	margin-bottom: 5px;
+	position: relative;
+	left: 190px;
+}
+
+ul.ui-tabs-nav {
+	background: none;
+	border: none;
+}
+
+.ui-tabs .ui-tabs-panel {
+	border: 1px solid #ddd;
+	border-right: none;
+}
+
+.sortable td {
+	border: 1px solid #ddd;
+	padding: 5px;
+	min-width: 80px;
+}
+
+.rowalt {
+	background: #eee;
+}
+
+#queryeditorcontainer {
+	position: relative;
+	top: 20px;
+}
+
+#table_div {
+	width: 960px;
+}
+
+.helptip {
+	color: blue;
+	font-weight: 900
+}
+
+.error {
+	color: red;
+}
+
+.info {
+	color: grey
+}
+
+/* Mainly for the autocomplete dropdowns */
+
+.ui-menu {
+    background:        #F2F2F2;
+    background:        -moz-linear-gradient(top, #F8F8F8 1%, #E1E1E1 100%);
+    background:        -webkit-gradient(linear, left top ,left bottom , color-stop(1%, #F8F8F8), color-stop(100%, #E1E1E1));
+    border:            solid 1px #BBB;
+    border-radius:     0px 0px 4px 4px;
+}
+
+/* What to do when the autocomplete is loading - animated gif here */
+/*.ui-autocomplete-loading { background: orange; } */
+
+/* Validation errors on form pages */
+
+.form-validation-error {
+  background:  white;
+  font-weight: bold;
+  color: red;
+}
+
+/* User Registration Page plugins/Core/RegisterNewUser.php */
+
+.registeruser-frame {
+  margin:       20px auto;
+  padding:      20px;
+  border:       1px solid gray;
+}
+.registeruser-description {
+    width:      70%;
+    margin:     10px auto 10px auto;;
+    padding:    20px;
+    text-align: left;
+}
+.registeruser-title {
+    padding:     20px;
+    font-size:   1.7em;
+    font-weight: bold;
+    color:       black;
+}
+.registeruser-error {
+    margin-left: 30%;
+    margin-top:  20px;
+    color:       red;
+    text-align:  left;
+}
+.registeruser-error li {
+    list-style:  none;
+}
+
+.passwordreset-frame {
+  margin:       20px auto;
+  padding:      20px;
+  border:       1px solid gray;
+}
+.passwordreset-description {
+    width:      70%;
+    margin:     10px auto 10px auto;;
+    padding:    20px;
+    text-align: left;
+}
+.passwordreset-title {
+    padding:     20px;
+    font-size:   1.7em;
+    font-weight: bold;
+    color:       black;
+}
+.passwordreset-error {
+    margin-left: 30%;
+    margin-top:  20px;
+    color:       red;
+    text-align:  left;
+}
+.passwordreset-error li {
+    list-style:  none;
+}
+
+/* #####################  Login form ########################### */
+
+.loginform {
+	   /*    border:       1px solid gray; /* Gray border roun the whole thing */
+    width:        350px;
+    margin:       30px  auto; 
+    padding:      20px;
+
+}
+.loginform-title {
+    margin:       30px;
+    text-align:   center;
+    font-size:    1.7em;
+    font-weight:  bold;
+    color:        black;
+}
+.loginform-fieldlabel {
+    margin:       0;
+    text-align:   left;
+}
+
+.loginform ul {
+   width:           60%;
+   margin:          0 auto;
+   padding:         0;
+   text-align:      left;
+   list-style-type: none; /* no bullets */
+}
+
+.loginform li {
+   width:         100%;
+   text-align:    center;
+   list-style:    none;
+}
+.loginform-fieldlabel {
+   margin:        0;
+   text-align:    left;
+}
+.loginform-textfield {
+   width:         95%;
+   margin:        2px auto 20px auto;
+}
+.loginform-image {
+   width:         50%;
+   margin:        20px auto;
+}
+.loginform-submitbutton {
+    padding:      5px 10px;
+}
+.loginform-registertext {
+    font-size:    1.1em;
+}
+.loginform-error {
+    margin:       20px auto;
+}
+
+/* Elements useful in one off pages - descriptions, form padding etc */
+/* Used in delete_pages and other forms                              */
+.formframe {
+    padding:   0px;
+}
+.formframe table {
+    margin-bottom: 20px;
+    margin:        1;
+    /*border:        1px solid #BBBBBB;*/
+    text-align:    left;
+}
+.formframe td {
+    /*padding: 5px;   /* Spacing rows - need to pad the cells*/
+}
+.searchframe .input  {
+    width:   200px;
+}
+
+.alignleft {
+	font-size:12;
+	text-align:left
+}
+
+/*************** Footer ****************************/
+/*
+#footer {
+    clear:          both;
+    text-transform: uppercase;
+    width:          100%;
+    padding-top:    50px;
+    border:         3px solid #FFCCCC;
+}
+
+
+#main_footer {
+     background:   url("../img/Light_Gray_Gradient.png") repeat-x;
+     height:   25px;
+     clear: both;
+	display: none;
+     width: 100%;
+     border-top:  1px solid #999999;
+     border-bottom:  1px solid #AAAAAA;
+}
+*/
+.banner-title-frame {
+    float:left;
+}
+ 
+/* Testing toggling of tables */
+.table-control {
+    margin-left:  -10px;
+}
+
+/*  #########################  Sidebar Accordions ##########################*/
+
+.dashboard {
+    padding:       3px;
+    float:         left;
+    border:        none;
+    position:      relative;
+}
+
+.dashboard_head span {
+    font-weight: normal;
+    font-size:   1.5em;		
+    background:    lightgray;
+    padding: 10px;
+    width: 500px;
+    display: block;
+}
+
+.dashboard  ul {
+   margin: 0;
+}
+
+.dashboard li {
+    list-style:   none;
+    display:      block;
+    padding:      3px 3px 3px 15px;
+}
+
+.workflow_step li {
+    padding:  5px 5px 5px 20px;
+    background:   pink;
+}
+
+.workflow_step a:hover {
+    backgorund: lightgray;
+}
+
+#messagebox {
+	display: none;
+}
+
+.mass_calc_table {
+   float: left;
+}
+.mass_calc_table table {
+   border: 1px solid lightgray;
+}
+.mass_calc_plot {
+   float: left;
+}
+.mass_calc_values {
+   padding:   15px;
+   font-size: 1.2em;
+   border: 1px solid gray;
+   margin-bottom: 20px;
+}		 
+
+
+/* Popup menu plugin */
+.mixedrole {
+    background: lightgray;
+}
+.vmenu {
+    border:     1px solid #aaa;
+    position:   absolute;
+    background: #fff;
+    display:    none;
+/*    font-size:  0.75em;*/
+}
+.vmenu .first_li span { 
+    width:      100px;
+    display:    block;
+    padding:    2px 10px;
+    cursor:     pointer
+}
+.vmenu .inner_li{
+    display:    none;
+    margin-left:120px;
+    position:   absolute;
+    border:     1px solid #aaa;
+    border-left:1px solid #ccc;
+    margin-top: -28px;
+    background:#fff;
+}
+.vmenu .sep_li{
+    border-top: 1px ridge #aaa;
+    margin:     5px 0
+}
+.vmenu .fill_title{
+    font-size:  11px;
+	font-weight: bold;
+    /height:    15px;
+    /overflow:  hidden;
+    word-wrap:  break-word;
+}
+
+/* Trying to rotate text in form configuration */
+
+#config_header {       
+    /*-moz-transform: rotate(-45deg);                 /*FF*/
+    /*  -o-transform: rotate(-45deg);                   /*Opera*/
+/*      -webkit-transform: rotate(-45deg);              /*Safari, Chrome*/
+  /*  -ms-transform: rotate(-45deg) !important;       /*IE9*/
+  /*      transform: rotate(-45deg);                      /*CSS3 default*/
+  /*  background-color:transparent;
+*/
+    zoom: 1;
+    z-index:1; /*NEEDED FOR IE8*/
+    font-size:  0.75em;
+    width: 40px;
+    vertical-align:  center;
+    /*position:absolute;*/
+
+/*    padding     : 45px 10px 15px 10px;*/
+}
+
+.pog_accordion {
+   width:  500px;
+   background: #CCCCCC;
+   padding: 5px;
+   margin-top: 0px;
+}
+
+.pog_accordion_frame {
+   width: 510px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+//      border:  1px solid #9DADBC;	
+ }
+ .pog_accordion_frame ul {
+   padding-right: 10px;
+   padding-top: 0px;
+   padding-bottom: 10px;
+}
+.typetitle {
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.nametitle {
+	width: 100%;
+	white-space: nowrap;
+}
+
+#typeandname {
+	width: 900px;
+	background-image: url(../../html/img/page-title-border.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+
+.plupload_filelist_header {
+   height:  30px;
+}
+.restricted-arrow {
+    background: url("../../html/css/jquery.selectBox-arrow.gif") 50% center no-repeat;
+}
+
+.freetext {
+   width: 400px;
+
+}
+.freetext p, .freetext  html, .freetext body, .freetext div, .freetexg span,
+.freetext applet, .freetext object, .freetext iframe,
+.freetext h1, .freetext h2, .freetext h3, .freetext h4, .freetext h5, .freetext h6, .freetext p, .freetext blockquote, .freetext pre,
+.freetext a, .freetext abbr, .freetext acronym, .freetext address, .freetext big, .freetext cite, .freetexg code,
+.freetext del, .freetext dfn, .freetext em, .freetext font, .freetext img, .freetext ins, .freetext kbd, .freetext q, .freetext s, .freetext samp,
+.freetext small, .freetext strike, .freetext strong, .freetext sub, .freetext sup, .freetext tt, .freetext var,
+.freetext dd, .freetext dl, .freetext dt, .freetext li, .freetext ol, .freetext ul,
+.freetext fieldset, .freetext form, .freetext label, .freetext legend,
+.freetext table, .freetext caption, .freetext tbody, .freetext tfoot, .freetext thead, .freetext tr, .freetext th, .freetext td {
+	margin: 10px;
+	padding: 5px;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: inherit;
+	text-align: left;
+	vertical-align: baseline;
+	width: 100%;
+}
+.freetext a  {
+  margin:0;
+}
+.freetext ul {
+   margin-left: 20px;
+}
+
+.freetext li {
+ padding-top: 0;
+ margin-top: 0;
+ padding-bottom: 0;
+ margin-bottom: 0;
+ margin-left: 20px;
+
+}
+.freetext h1 {
+   font-size:  1.7em;
+}
+
+.freetext h2 {
+   font-size:  1.5em;
+}
+.freetext h3 {
+   font-size:  1.2em;
+}
+.freetext p {
+    margin: 10px;
+    
+}
+.freetext blockquote {
+    margin-left:  30px;
+}
+
+.pageelement-label { 
+
+    width:  50px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid red;
+}
+.pageelement-smallinputfield {
+    width: 200px;
+    border: 1px solid blue;
+}
+.pageelement-vsmallinputfield {
+    width: 50px;
+    border: 1px solid blue;
+}
+.pageelement-inputfield {
+    width: 300px;
+    border: 1px solid blue;
+}
+
+/* For the accordion plugin */
+.minilims-accordion  {
+    border: 1px solid gray;
+    padding: 0px;
+    margin: 5px;
+    width: 540px;
+}
+			  
+.minilims-accordion .head {
+    background: lightgray;
+    display: block;
+    padding: 5px 5px;
+
+}
+.minilims-accordion .head a{
+    color: black;
+    font-weight: bold;
+}
+
+/* For the new querybuilder */
+.querybuilder-table {
+    padding: 2px;
+}
+.querybuilder-table td {
+    width: 200px;
+    margin: 0px;
+}
+.querybox, #buttonbox {
+    margin: 10px;
+    border: none;
+}
+
+
+.page_element_close {
+    display: block;
+    float:right;
+    position:relative;
+    top:0px;
+    right: 0px;
+    height: 20px;
+    /*    border: 1px solid red;*/
+}
+
+
+.minilims-header  {
+    border: 1px solid gray;
+    padding: 0px;
+    margin: 5px;
+    width: 540px;
+}
+			  
+.minilims-header .head {
+    background: lightgray;
+    display: block;
+    padding: 5px 5px;
+
+}
+.minilims-header .head a{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.rcldap_input {
+  padding: 5px;	     
+  width: 500px;
+  clear: both;
+}
+
+.rcldap_input div {
+  width: 100%;
+  clear: both;
+}
+.rcldap_input input {
+  width: 390px;
+}
+.rcldap_input textarea {
+  width: 390px;
+}
+
+/* Test for table cell editing popup window */
+.tablecelleditor {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+/* Arrow for the MinilimsComboBox */
+
+.MinilimsComboBox-arrow {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 23px;
+   height: 25px;
+   background: url(jquery.selectBox-arrow.gif) 50% center no-repeat;
+   border-left: solid 1px #BBB;
+}
+

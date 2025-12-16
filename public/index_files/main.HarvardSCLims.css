@@ -1,0 +1,134 @@
+
+.logo-color, #logo{
+    background-color: white;
+    border-bottom:    1px solid gray;
+}
+
+.banner-title-1 {
+    font-family:   Baskerville, Verdana, Geneva, Arial, Helvetica, sans-serif;	
+    font-size:     24px;
+    padding-top:   20px;
+    color:         #964B36;
+}
+.banner-title-2 {
+    font-family:   Baskerville,Verdana, Geneva, Arial, Helvetica, sans-serif;	
+    font-size:     16px;
+    color:         #764B36;           /* Blue gray */
+}
+
+#topbuttonbar {
+    background: #FFF;
+}
+
+#topbuttonbar li {
+    border-left:  1px solid #BBCCDD;
+}
+
+#topbuttonbar a {
+    color:        #5581b8;           /* Mid blue */
+}
+
+#topbuttonbar a:hover {
+    color:        #964b36;            /* Mid brown */
+}
+
+
+.mainpanel-title-font {
+    color:        #964b36;            /* Mid brown */
+}
+
+
+.sidebar_accordion .head a {
+    color:         white;
+    background:    #96ACDB;          /* Mid  blue */
+}
+
+.sidebar_accordion .head a:hover {    
+    color:         #000;             /* Black */
+}
+.sidebar_accordion a {
+    color:         #666;
+}
+.sidebar-font {
+    color:         #37699C;           /* Dark blue */
+}
+
+.sidebar-border {
+    color:         #9DADBC;           /* Bluish gray */
+    border:        1px solid #bbb;
+}
+
+.stable-color th {
+    color:          white;
+    background:     #BCC8E0;          /* LightBlue */
+    border:         1px solid #F2F2F2;
+}
+.stable tr:hover {
+    background:     #EEE;             /* Very light gray */
+}
+.stable td {
+    border-right:    1px solid #eee;
+    border-bottom:   1px solid #eee;
+}
+#file_import_menu li {
+    background:      #BCC8E0;
+    border:          1px solid gray;
+}		  
+#file_import_menu li:hover {
+    background:      #FEE5D6;         /* Light blue */
+}
+
+.dropmenu .toplevel	{					
+    background:  #4E81B6; 
+    background-image:  url('../../plugins/HarvardSCLims/img/HarvardSCLims-menubar-gradient-blue.png');*/
+
+}
+
+.dropmenu .toplevel.hover { 			
+    background-color: gray; 
+    background-image:  url('../../plugins/HarvardSCLims/img/HarvardSCLims-menubar-gradient-blue.png');*/
+}
+
+.dropmenu .toplevel.selected { 			
+    background-color: #2A557F;
+}
+.dropmenu .toplevel.selected { 			
+    background-color: #2A557F;
+}
+
+.dropmenu .toplevel.hover.selected { 	
+    background-color: #2A557F;         /* Dark blue */
+}
+
+.dropmenu .sublevel {					
+    background-color: #2A557F;         /* Darker blue */
+    border-bottom:    1px solid #CCC; 
+}
+
+.dropmenu .sublevel.hover {				
+    background-color: gray; 
+}
+
+.dropmenu .sublevel.selected { 	
+    background-color: #204160;         /* Very Dark blue */
+ }
+
+.dropmenu .sublevel.hover.selected {	
+    background-color: #2A557F;         /* Mid Dark blue */
+}
+
+a {
+    color:           #2A557F;         /* Mid dark blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color:           #0066cc;         /* Bright blue */
+}
+
+
+input[type="button"], .button-color {
+    background:    #2A557F ;           /* Dark blue  */
+    color:         white;
+}
+
