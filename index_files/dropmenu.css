@@ -1,0 +1,82 @@
+/*
+ 	Essentials
+*/
+.dropmenu { 
+	margin: 0; 
+	padding: 0; 
+	height: 28px;
+}
+/*
+ 	Optional but recommended
+*/
+ .dropmenu ul { width: 170px; } 
+
+
+/*
+ 	Theming
+*/
+
+/* All Items */
+.dropmenu li a {
+	text-decoration: none;
+}
+.dropmenu li a, .dropmenu li span { 
+	color: white; 
+	font-size: 12px;
+    font-family:   Verdana, Arial, Helvetica, sans-serif;
+	padding:7px;
+	padding-left:  30px;
+	padding-right:  30px;
+}
+
+
+
+/*		Topitems			*/
+
+
+/*			standard		*/
+.dropmenu .toplevel	{					
+        background-color: #999; 
+	border-right: 1px solid #888; 
+	background-image: url('../../html/img/Menu-button-back.png');
+	background-repeat: repeat-x;
+}
+
+/*			onmouseover		*/
+.dropmenu .toplevel.hover { 			
+	background-color: gray; 
+	background-image: url('../../html/img/Menu-button-back-hover.png');
+	background-repeat: repeat-x;
+}
+
+/*			current page	*/
+.dropmenu .toplevel.selected { 			background-color: #666; }
+
+/*			current page onmouseover	*/
+.dropmenu .toplevel.hover.selected { 	background-color: #666; }
+
+
+
+/*		Subitems			*/
+
+
+/*			standard		*/
+.dropmenu .sublevel {					
+    background-color: #222; 
+	border-bottom: 1px solid #888; 
+}
+
+/*			onmouseover		*/
+.dropmenu .sublevel.hover {				
+    background-color: gray; 
+}
+
+/*			current page	*/
+.dropmenu .sublevel.selected { 	
+    background-color: #666;    
+ }
+
+/*			current page onmouseover	*/
+.dropmenu .sublevel.hover.selected {	
+    background-color: #666;     
+}

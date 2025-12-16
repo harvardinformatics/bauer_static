@@ -1,0 +1,66 @@
+
+.download{
+	background-image:url("images/download.png");
+	width:176px;
+	padding-left:100px;
+	height:75px;
+	line-height:75px;
+	display:block;
+	outline:none;
+}
+.preview{
+	height:79px;
+}
+.preview img{
+	 width:56px;
+	 height:56px;
+	 border:2px solid #fff;
+	 vertical-align: middle;
+	 margin-right:20px;
+}
+.preview,.filename{
+
+}
+.filename{
+	width:500px;
+	overflow:hidden;
+	text-wrap: none;
+}
+.progressbar{
+	margin:29px 48px 0px 0px;
+	width:133px;
+	height:  25px;
+
+}
+#dropbox{
+	background: #dddddd;
+	width:304px;
+	height:50px;
+	margin:20px;
+	padding:20px;
+}
+#upload{
+	width:100%;
+	margin:0px 20px;
+	border-top:1px solid #fff;
+	margin-bottom:25px;display:none;
+}
+#upload > div32{
+	height:79px;
+	line-height:79px;
+	border-bottom:1px solid #fff;
+
+}
+#multiple {
+    margin-left:50px;
+}
+
+.uploaded_file {
+	overflow: auto;
+	width: 100%;
+	list-style: none;
+}
+.uploaded_file div{
+	float:left;
+	vertical-align: middle;
+}
